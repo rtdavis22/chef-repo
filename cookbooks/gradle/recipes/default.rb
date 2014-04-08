@@ -10,7 +10,6 @@ include_recipe "ark"
 
 ark "gradle" do
   url node[:gradle][:url]
-  checksum node[:gradle][:checksum]
   home_dir node[:gradle][:home]
   version node[:gradle][:version]
   append_env_path true
