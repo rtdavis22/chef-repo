@@ -1,0 +1,3 @@
+[submodule "data_bags"]
+	path = data_bags
+	url = git@github.com:rtdavis22/data_bags.git
