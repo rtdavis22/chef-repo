@@ -1,6 +1,10 @@
 include_recipe "git"
+include_recipe "gradle"
+include_recipe "java"
+include_recipe "nodejs"
 include_recipe "rbenv"
 include_recipe "rbenv::ruby_build"
+include_recipe "scala"
 
 %w{vim}.each do |pkg|
   package pkg do
