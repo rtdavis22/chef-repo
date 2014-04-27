@@ -4,12 +4,13 @@
   "default_attributes": {
     "authorization": {
       "sudo": {
-        "users": ["robert2"],
+        "users": ["robert"],
         "passwordless": true
       }
     }
   },
   "run_list": [
+    "robs_stuff",
     "sudo"
   ],
 }
