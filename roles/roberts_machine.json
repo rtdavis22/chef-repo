@@ -13,6 +13,6 @@
     "recipe[chef-client]",
     "robs_stuff",
     "sudo",
-    "recipe[rbenv]"
+    "recipe[robert-devel]"
   ]
 }
