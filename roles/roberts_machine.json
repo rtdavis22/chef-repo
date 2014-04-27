@@ -12,5 +12,5 @@
   "run_list": [
     "robs_stuff",
     "sudo"
-  ],
+  ]
 }
