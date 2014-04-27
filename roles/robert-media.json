@@ -1,0 +1,7 @@
+{
+  "name": "robert-media",
+  "json_class": "Chef::Role",
+  "run_list": [
+    "recipe[plex]"
+  ]
+}
