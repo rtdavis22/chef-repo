@@ -5,8 +5,10 @@ package "avahi-daemon" do
 end
 
 apt_repository "plex" do
-  uri "http://www.plexapp.com/repo"
+  uri "http://plex.r.worldssl.net/PlexMediaServer/ubuntu-repo"
+  distribution "lucid"
   components ["main"]
+  trusted true
 end
 
 package "plexmediaserver" do
