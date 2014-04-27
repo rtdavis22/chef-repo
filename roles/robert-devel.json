@@ -1,0 +1,6 @@
+{
+  "name": "robert-devel",
+  "run_list": [
+    "recipe[robert-devel]"
+  ]
+}

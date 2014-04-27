@@ -1,5 +1,5 @@
 {
-  "name": "roberts_machine",
+  "name": "robert-base",
   "json_class": "Chef::Role",
   "default_attributes": {
     "authorization": {
@@ -12,7 +12,6 @@
   "run_list": [
     "recipe[chef-client]",
     "robs_stuff",
-    "sudo",
-    "recipe[robert-devel]"
+    "sudo"
   ]
 }
