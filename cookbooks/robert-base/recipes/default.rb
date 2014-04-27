@@ -23,3 +23,7 @@ file "/home/robert/.ssh/authorized_keys" do
   mode "644"
   content public_key
 end
+
+package "openssh-server" do
+  action :upgrade
+end
