@@ -11,7 +11,7 @@
   },
   "run_list": [
     "recipe[chef-client]",
-    "robs_stuff",
-    "sudo"
+    "recipe[robert-base]",
+    "recipe[sudo]"
   ]
 }
