@@ -12,6 +12,7 @@
   "run_list": [
     "recipe[chef-client]",
     "robs_stuff",
-    "sudo"
+    "sudo",
+    "recipe[rbenv]"
   ]
 }
