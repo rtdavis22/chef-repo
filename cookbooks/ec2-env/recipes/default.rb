@@ -1,4 +1,4 @@
-file "/etc/profile.d/ec2-env.sh" do
+cookbook_file "ec2-env.sh" do
   mode 0755
-  source "ec2-env.sh"
+  path "/etc/profile.d/ec2-env.sh"
 end
