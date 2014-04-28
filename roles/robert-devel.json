@@ -1,6 +1,7 @@
 {
   "name": "robert-devel",
   "run_list": [
-    "recipe[robert-devel]"
+    "recipe[robert-devel]",
+    "recipe[ec2-env]"
   ]
 }
