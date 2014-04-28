@@ -24,6 +24,18 @@ file "/home/robert/.ssh/authorized_keys" do
   content public_key
 end
 
+aws_creds = Chef::EncryptedDataBagItem.load("ec2", "robert")
+template "/home/robert/.ec2-creds" do
+  source ".ec2-creds.erb"
+  owner "robert"
+  group "robert"
+  mode "600"
+  variables({
+    :aws_access_key_id => aws_creds["aws_access_key_id"],
+    :aws_secret_access_key => aws_creds["aws_secret_access_key"]
+  })
+end
+
 package "openssh-server" do
   action :upgrade
 end
