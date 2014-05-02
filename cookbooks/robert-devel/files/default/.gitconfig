@@ -1,0 +1,7 @@
+[user]
+	name = Robert Davis
+	email = rtdavis22@gmail.com
+[credential]
+	helper = cache
+[core]
+	editor = vim

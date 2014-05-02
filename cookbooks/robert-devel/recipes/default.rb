@@ -15,3 +15,9 @@ end
 rbenv_ruby "1.9.3-p484" do
   global true
 end
+
+cookbook_file "/home/robert/.gitconfig" do
+  source ".gitconfig"
+  owner "robert"
+  group "robert"
+end
