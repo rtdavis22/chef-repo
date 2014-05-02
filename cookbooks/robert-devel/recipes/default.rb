@@ -5,9 +5,8 @@ include_recipe "nodejs"
 include_recipe "rbenv"
 include_recipe "rbenv::ruby_build"
 include_recipe "scala"
-include_recipe "thrift"
 
-%w{vim}.each do |pkg|
+%w{vim thrift-compiler}.each do |pkg|
   package pkg do
     action :upgrade
   end
